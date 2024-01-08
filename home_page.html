@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <title>Kerala Tourism</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-lg-0" href="#">
+            <img
+              src="https://onlykutts.com/wp-content/uploads/2023/02/kerala-gods-own-country.png"
+              height="55"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../home_page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">District</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contant us</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+
+        <div class="d-flex align-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#modalForm"
+                >Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#modalForm"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalForm"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Bootstrap 5 Modal Form
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMe"
+                />
+                <label class="form-check-label" for="rememberMe"
+                  >Remember me</label
+                >
+              </div>
+              <div class="modal-footer d-block">
+                <p class="float-start">
+                  Not yet account <a href="#">Sign Up</a>
+                </p>
+                <button type="submit" class="btn btn-warning float-end">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      id="myCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></li>
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></li>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1000">
+          <div
+            class="overlay-image"
+            style="
+              background-image: url(https://www.jagranimages.com/images/newimg/18072023/18_07_2023-kerala_best_places_u_23474704.webp);
+            "
+          ></div>
+          <div class="Maincontainer">
+            <h1 class="sliderhead">Welcome to Kerala Tourism</h1>
+            <p>
+              hjcjziscis cshdbcsdcbcsbcsbcjbzhcb s jvjbjz hcsjc hs csj hjh jjshv
+              sd n scscsj s
+            </p>
+            <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="overlay-image"
+            style="
+              background-image: url(https://www.onmanorama.com/content/dam/mm/en/travel/travel-news/images/2020/12/13/munnar.jpg.transform/845x440/image.jpg);
+            "
+          ></div>
+          <div class="Maincontainer">
+            <h1 class="sliderhead">Welcome to Kerala Tourism</h1>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> -->
+
+    <div
+      id="myCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></li>
+        <li
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></li>
+        <div class="MaincontainerHeading">
+          <h1>Welcome to Kerala Tourism</h1>
+          <p>Experiencing the next travel Journey with Kerala Tourism</p>
+          <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
+        </div>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1000">
+          <div
+            class="overlay-image"
+            style="
+              background-image: url(https://i0.wp.com/oneday.travel/wp-content/uploads/one-day-wayanad-local-sightseeing-tour-package-private-car-header.jpg?resize=1536%2C1024&ssl=1);
+            "
+          ></div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="overlay-image"
+            style="
+              background-image: url(https://www.jagranimages.com/images/newimg/18072023/18_07_2023-kerala_best_places_u_23474704.webp);
+            "
+          ></div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <h1 class="head1">About Kerala</h1>
+    <div class="container">
+      <section class="MainFeature">
+        <p>
+          <span>Kerala</span>
+
+          located on the south-western tip of India, enjoys unique geographical
+          features that have made it one of the most sought-after tourist
+          destinations in Asia. Fondly referred to as ‘God’s Own Country’,
+          Kerala was selected by the National Geographic Traveller as one of the
+          50 destinations of a lifetime and one of the thirteen paradises in the
+          world. An equable climate, serene beaches, tranquil stretches of
+          backwaters, lush hill stations and exotic wildlife are the major
+          attractions of this land. A unique advantage of Kerala is that most of
+          the destinations here are only a two - four hour drive from the other.
+          Classical art forms, colourful festivals, exotic cuisine are some of
+          the cultural marvels that await travellers. Ayurveda, the ancient
+          Indian system of medicine and Panchakarma, the rejuvenation therapy in
+          Ayurveda have also helped Kerala to gain a pan-global reputation as a
+          worth-visit destination. Season never ends in Kerala, thanks to the
+          year-long moderate climate and numerous festivals and events.
+        </p>
+      </section>
+    </div>
+    <h1 class="head1">Experience Kerala</h1>
+    <div class="container mt-5">
+      <div class="row gx-1 gy-4">
+        <div class="col-6">
+          <div class="card mb-3 h-100" style="max-width: 580px">
+            <div class="row g-0">
+              <div class="img col-md-4">
+                <img
+                  src="https://www.keralatourism.org/responsible-tourism/images/activities.jpg"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Responsible Tourism</h5>
+                  <p class="card-text">
+                    Responsible Tourism (RT) Mission is the nodal agency formed
+                    by the Government of Kerala to spread and implement the
+                    ideologies and initiatives of Responsible Tourism all over
+                    the State. It was launched on 20th October 2017 by Mr.
+                    Pinarayi Vijayan, Chief Minister of Kerala.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3 h-100" style="max-width: 580px">
+            <div class="row g-0">
+              <div class="img col-md-4">
+                <img
+                  src="https://www.keralatourism.org/images/yoga/static-banner/large/The_Philosophy_of_Yoga-10032020173315.jpg"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Yoga</h5>
+                  <p class="card-text">
+                    To some, it is the practice of exercises called asanas
+                    (bodily postures), to improve body flexibility and
+                    strengthen their muscles. For some others, it is a way of
+                    relieving mental stress through the performance of body
+                    postures. It is true that yoga asanas help to make spine
+                    supple and tone up muscles and can bring…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-3 h-100" style="max-width: 580px">
+            <div class="row g-0">
+              <div class="img col-md-4">
+                <img
+                  src="https://www.keralatourism.org/images/eco-tourism/ecotourism1.jpg"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Eco tourism</h5>
+                  <p class="card-text">
+                    Leave your worries behind and climb a mountain only to sit
+                    at the end of the hike on the green bank of a heart-shaped
+                    lake gawking at those clouds scuttling across hardly
+                    ruffling its liquid meniscus. Eco-Tourism is immense with
+                    diverse trekking packages.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2 h-100" style="max-width: 580px">
+            <div class="row g-0">
+              <div class="img col-md-4">
+                <img
+                  src="https://www.keralatourism.org/images/ebooks/images/trivandrum%20kollam%20(1).jpg"
+                  class="img-fluid rounded-start h-100"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Lands of Majestic Treats</h5>
+                  <p class="card-text">
+                    Explore the tourist destinations and things to do in Kollam
+                    and Thiruvananthapuram. Check out the e-brochure and start
+                    planning your next trip to South Kerala.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <h1 class="head1">Explore Kerala</h1>
+
+    <!-- <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kasaragod</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kannur</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kozhikode</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Wayanad</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Palakkad</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Ernakulam</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Idukki</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Thrissur</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Alappuzha</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kollam</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kottayam</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Thiruvananthapuram</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="scrollcontainer">
+      <ul class="cards">
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="ksd">
+              <img
+                src="https://www.hellovisit.in/uploads/0000/1/2022/09/17/ranipuram-kasaragod.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+
+            <h3 class="card-title">
+              <a class="place-card">Kasaragod</a>
+            </h3>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="knr">
+              <img
+                src="https://ourbackpacktales.com/wp-content/uploads/2019/11/Kannur-Eye-in-Palakkayam-Thattu-Kannur-OurBackpackTales-1140x804.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">
+              <a class="place-card">Kannur</a>
+            </h3>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                repudiandae magnam harum natus fuga et repellat in maiores.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="card-link-wrapper">
+            <a href="" class="card-link">Learn More</a>
+          </div> -->
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="kzkd">
+              <img
+                src="https://img.onmanorama.com/content/dam/mm/en/travel/travel-news/images/2021/7/1/kozhikode-beach-main.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Kozhikode</h3>
+            <div class="card-content">
+              <p>
+                Phasellus ultrices lorem vel bibendum ultricies. In hendrerit
+                nulla a ante dapibus pulvinar eu eget quam.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="wynd">
+              <img
+                src="https://tsprodimages.s3.ap-south-1.amazonaws.com/v/03788301/trips/ts_202211252010370000001657234148.webp"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Wayanad</h3>
+            <div class="card-content">
+              <p>
+                Aenean posuere mauris quam, pellentesque auctor mi bibendum nec.
+                Sed scelerisque lacus nisi, quis auctor lorem ornare vel.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="mlpm">
+              <img
+                src="https://cdn.s3waas.gov.in/s382aa4b0af34c2313a562076992e50aa3/uploads/2018/04/2018041750.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Malappuram</h3>
+            <div class="card-content">
+              <p>
+                Aenean posuere mauris quam, pellentesque auctor mi bibendum nec.
+                Sed scelerisque lacus nisi, quis auctor lorem ornare vel.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="plkd">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Palakkad_Fort_5.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Palakkad</h3>
+            <div class="card-content">
+              <p>
+                Vestibulum pharetra fringilla felis sit amet tempor. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Cras et arcu
+                sit amet est consequat feugiat. Nam ut sapien pulvinar.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="kochi">
+              <img
+                src="https://spb.kerala.gov.in/sites/default/files/styles/inner_banner_image_850x460/public/2020-09/4_1.jpg?itok=QdkvH5Ma"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Ernakulam</h3>
+            <div class="card-content">
+              <p>
+                Donec ut tincidunt nisl. Vivamus eget eros id elit feugiat
+                mollis. Nam sed sem quis libero finibus tempor.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="trsur">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/93/76/fe/side-view-of-the-water.jpg?w=700&h=500&s=1"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Thrissur</h3>
+            <div class="card-content">
+              <p>
+                Aliquam eget nisl auctor, sollicitudin ipsum at, dignissim
+                ligula. Donec tincidunt in elit et pellentesque. Integer posuere
+                metus ac massa mollis euismod.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="alpzha">
+              <img
+                src="https://www.worldatlas.com/r/w1300-q80/upload/09/35/c6/shutterstock-2036283566.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Alappuzha</h3>
+            <div class="card-content">
+              <p>
+                Vivamus eget eros id elit feugiat mollis. Nam sed sem quis
+                libero finibus tempor.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="idki">
+              <img
+                src="https://keralatourism.travel/images/destinations/places-to-visit/idukki/munnar-idukki-kerala-tourism-entry-fee-timings-holidays-reviews-small.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Idukki</h3>
+            <div class="card-content">
+              <p>
+                Duis id congue turpis. Donec sodales porta felis, nec ultricies
+                ante. Nam placerat vitae metus sit amet tempor. Aliquam ac
+                dictum est.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="pthita">
+              <img
+                src="https://tsprodimages.s3.ap-south-1.amazonaws.com/v/03788301/trips/ts_202211252010370000001657234148.webp"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Pathanamthitta</h3>
+            <div class="card-content">
+              <p>
+                Aenean posuere mauris quam, pellentesque auctor mi bibendum nec.
+                Sed scelerisque lacus nisi, quis auctor lorem ornare vel.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="klm">
+              <img
+                src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/04/Jatayu%E2%80%99s-Earth-Centre-kollam-kb6592.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Kollam</h3>
+            <div class="card-content">
+              <p>Pellentesque eget eros eget justo efficitur fermentum.</p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="ktym">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Vembanad_Lake_at_Kumarakom.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Kottayam</h3>
+            <div class="card-content">
+              <p>
+                Phasellus posuere nec nibh ut tincidunt. Aenean mollis turpis
+                non eros posuere, at luctus leo hendrerit. Integer non libero
+                sapien.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="card">
+          <div>
+            <a class="place-card" href="#" id="tvm">
+              <img
+                src="https://keralakaumudi.com/web-news/en/2023/10/NMAN0441781/image/beach.1.2381868.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </a>
+            <h3 class="card-title">Thiruvananthapuram</h3>
+            <div class="card-content">
+              <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae; Vestibulum ornare metus ac lectus
+                scelerisque volutpat.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+    <footer>
+      <p>Aa programmes</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="home_page.js"></script>
+  </body>
+</html>
