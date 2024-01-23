@@ -64,7 +64,7 @@
                 class="nav-link"
                 href="#"
                 data-bs-toggle="modal"
-                data-bs-target="#modalForm"
+                data-bs-target="#modalFormLogin"
                 >Login</a
               >
             </li>
@@ -73,7 +73,7 @@
                 class="nav-link"
                 href="#"
                 data-bs-toggle="modal"
-                data-bs-target="#modalForm"
+                data-bs-target="#modalFormSignup"
                 >Sign Up</a
               >
             </li>
@@ -83,10 +83,11 @@
       <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-    <!-- Modal -->
+
+    <!-- SignUp Form -->
     <div
       class="modal fade"
-      id="modalForm"
+      id="modalFormSignup"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -94,9 +95,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">
-              Bootstrap 5 Modal Form
-            </h5>
+            <h5 class="modal-title" id="exampleModalLabel">SignUp Form</h5>
             <button
               type="button"
               class="btn-close"
@@ -105,41 +104,102 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label class="form-label">Email Address</label>
+            <form id="signupForm" action="/">
+              <div class="mb-3 input-control">
+                <label class="">Username</label>
                 <input
                   type="text"
                   class="form-control"
-                  id="username"
+                  id="uname"
                   name="username"
-                  placeholder="Username"
                 />
+                <div class="error"></div>
               </div>
-              <div class="mb-3">
-                <label class="form-label">Password</label>
+              <div class="mb-3 input-control">
+                <label class="">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="mb-3 input-control">
+                <label class="">Password</label>
                 <input
                   type="password"
                   class="form-control"
                   id="password"
                   name="password"
-                  placeholder="Password"
                 />
+                <div class="error"></div>
               </div>
-              <div class="mb-3 form-check">
+              <div class="mb-3 input-control">
+                <label class="">Confirm Password</label>
                 <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="rememberMe"
+                  type="password"
+                  class="form-control"
+                  id="confirmpassword"
+                  name="password"
                 />
-                <label class="form-check-label" for="rememberMe"
-                  >Remember me</label
-                >
+                <div class="error"></div>
               </div>
+
               <div class="modal-footer d-block">
-                <p class="float-start">
-                  Not yet account <a href="#">Sign Up</a>
-                </p>
+                <button type="submit" class="btn btn-warning float-end">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Login Form-->
+    <div
+      class="modal fade"
+      id="modalFormLogin"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm" action="/">
+              <div class="mb-3 input-control">
+                <label class="">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="logemail"
+                  name="email"
+                />
+                <div class="error"></div>
+              </div>
+              <div class="mb-3 input-control">
+                <label class="">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="logpassword"
+                  name="password"
+                />
+                <div class="error"></div>
+              </div>
+
+              <div class="modal-footer d-block">
                 <button type="submit" class="btn btn-warning float-end">
                   Submit
                 </button>
